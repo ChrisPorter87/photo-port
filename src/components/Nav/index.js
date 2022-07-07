@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+
 import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
@@ -21,12 +21,12 @@ function Nav(props) {
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => handleClick()}>
+            <a data-testid="about" href="#about">
               About me
             </a>
           </li>
           <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>Contact</span>
+            <span>Contact</span>
           </li>
           {categories.map((category) => (
             <li
